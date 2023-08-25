@@ -7,11 +7,11 @@ const Index= () => (
             <Descriptions.Item label="GitHub" span={3}>
                 <a
                     style={{ color: '#1890ff' }}
-                    href="https://github.com/haojiey/react-mu-admin"
+                    href="https://github.com/jiandongzou/react-manage"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    https://github.com/haojiey/react-mu-admin
+                   https://github.com/jiandongzou/react-manage
                 </a>
             </Descriptions.Item>
             <Descriptions.Item label="预览地址" span={3}>

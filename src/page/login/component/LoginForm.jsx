@@ -17,7 +17,6 @@ const LoginForm= (props) => {
     const onFinish = async (values) => {
         console.log(values)
         try {
-           alert("111")
              clearInfo()
             setLoading(true)
             const { data,code } = await login(values)
