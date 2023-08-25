@@ -9,6 +9,11 @@ import './App.css'
 import '@/assets/aliFont/iconfont.css'
 import { store } from '@/redux/index.js'
 import { connect,useSelector} from 'react-redux';
+//import { setupProdMockServer } from '@/mock/_index';
+// if (process.env.NODE_ENV === 'production') {
+//   console.log(11111);
+//   setupProdMockServer();
+// }
 
 // 默认语言为 en-US，如果你需要设置其他语言，推荐在入口文件全局设置 locale
 

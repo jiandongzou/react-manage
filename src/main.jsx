@@ -6,6 +6,8 @@ import {store,persistor} from "@/redux/index"
 import { Provider } from "react-redux"
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/lib/integration/react'
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <StyleProvider hashPriority="high">
