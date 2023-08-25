@@ -12,13 +12,17 @@ import {
     Switch,
     Col,
     Row,
-    Space
+    Space,
+    theme
 } from 'antd';
 const { RangePicker } = DatePicker;
-
+ 
 const dateFormat = 'YYYY/MM/DD';
 
 const FormDemo = () => {
+    const {
+        token: { colorBgContainer,colorText },
+      } = theme.useToken();
     const formRef = React.useRef(null);
     const[formData,setFromData]=useState(null)
     const onReset = () => {
@@ -118,7 +122,9 @@ const FormDemo = () => {
 
             </Form>
             <Divider />
-            <div>提交数据:{formData?JSON.stringify(formData):'空'}</div>
+            <div style={{
+               color: colorText
+            }}>提交数据:{formData?JSON.stringify(formData):'空'}</div>
         </>
     );
 };
