@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button:foucs {
+  outline: 0 !important;
+}
+
+svg {
+  outline: none !important;
+}
+
+.login-inner {
+  align-items: center;
+  display: flex;
+}
+
+.login-container {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed !important;
+  width: 100%;
+  height: 100%;
+}
+
+.charts {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: rgba(0,0,0,0.1);
+}
