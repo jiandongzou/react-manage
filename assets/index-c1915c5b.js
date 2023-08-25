@@ -1,0 +1,1 @@
+import{x as e,k as s,B as a}from"./index-061bd8a1.js";const o="/assets/403-00471288.svg";function i(){const r=e(),t=()=>{r("/home")};return s.jsxs("div",{className:"error-card",children:[s.jsx("img",{src:o,alt:""}),s.jsx(a,{type:"primary",onClick:t,children:"回到首页"})]})}export{i as default};
