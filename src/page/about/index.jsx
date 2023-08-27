@@ -17,7 +17,7 @@ const Index= () => (
             <Descriptions.Item label="预览地址" span={3}>
                 <a
                     style={{ color: '#1890ff' }}
-                    href="http://mu.haojiey.cn/"
+                    href="https://jiandongzou.github.io/react-manage/"
                     target="_blank"
                     rel="noreferrer"
                 >
