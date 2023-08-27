@@ -1,6 +1,6 @@
 import {produce} from 'immer'
 let initSate={
-    name:'admin',
+    name:'',
     auth:'',
     token:'',
     permissons:[]
