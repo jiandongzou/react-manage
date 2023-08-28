@@ -1,7 +1,5 @@
 import LoginForm from './component/LoginForm'
-
 import './index.less'
-
 import logo from '@/assets/svg/vite.svg'
 export default function Login() {
     return (

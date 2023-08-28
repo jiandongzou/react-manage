@@ -1,8 +1,5 @@
 import { Navigate,useRoutes} from 'react-router-dom'
-import Error403 from '@/page/error/403/index'
-import Error404 from '@/page/error/404/index'
 import Login from '@/page/login/index'
-import Home from '@/page/home/index'
 import Layout  from  "@/components/Layout/index"
 import Auth from "@/router/Auth"
 import { lazy,Suspense } from 'react';
@@ -11,10 +8,8 @@ const viteModule = import.meta.glob('/src/page/**');
 const LayoutIndex=()=>(<Layout></Layout>);
 const Com=(Component)=>(
    <Suspense fallback={<div>loading</div>}>
-    
      <Component></Component> 
    </Suspense>
-   
 )
 
  const router=[
@@ -22,14 +17,6 @@ const Com=(Component)=>(
         path: '/',
         element: <Navigate to="/home"/>
     },
-    // {
-    //     path: '/error/403',
-    //     element: <Error403 />
-    // },
-    // {
-    //     path: '/error/404',
-    //     element: <Error404 />
-    // },
     {
         path: 'login',
         element: <Login></Login>
