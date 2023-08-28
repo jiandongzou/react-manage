@@ -1,0 +1,1 @@
+import{j as s}from"./react-16261f20.js";const a="/react-manage/static/svg/empty-ad38a5b0.svg",m=({description:t="暂无数据"})=>s.jsxs("div",{id:"empty",children:[s.jsx("img",{src:a,alt:t}),s.jsx("span",{children:t})]});export{m as E};
