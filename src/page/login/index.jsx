@@ -2,7 +2,7 @@ import LoginForm from './component/LoginForm'
 
 import './index.less'
 
-import logo from '@/assets/svg/logo.svg'
+import logo from '@/assets/svg/vite.svg'
 export default function Login() {
     return (
         <>
@@ -12,8 +12,8 @@ export default function Login() {
                 <div className="login-inner login-title  items-center animate-wiggle hidden lg:block lg:flex">
                     <img src={logo} alt="logo" className="logo-img" />
                     <div>
-                        <p className="text-[32px] font-black pt-[10px]">Mu Admin</p>
-                        <p className="!text-[16px] font-black sysname">木由管理系统</p>
+                        <p className="text-[32px] font-black pt-[10px]"> Admin</p>
+                        <p className="!text-[16px] font-black sysname">后台管理系统</p>
                     </div>
                 </div>
                 <div className="login-inner login-box flex">
@@ -23,7 +23,7 @@ export default function Login() {
                             <div className="login-logo flex items-center justify-between">
                                 <img src={logo} alt="logo" className="logo-img" />
                                 <div>
-                                    <p className="login-form-title">Mu Admin</p>
+                                    <p className="login-form-title">Admin</p>
                                 </div>
                             </div>
                             <LoginForm />

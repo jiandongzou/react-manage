@@ -6,15 +6,14 @@ import {
 } from '@ant-design/icons';
 import { Layout, Button, theme, Typography, Badge } from 'antd';
 import SideMenu from './components/side_menu';
-import { Outlet } from 'react-router';
-
+import { useNavigate } from 'react-router-dom';
 import screenfull from 'screenfull'
 import "./components/head.less"
 import './index.less'
 import AvatarIcon from './components/AvatarIcon'
 import ThemeIcon from "./components/ThemeIcon"
 import Watermark from "../Watermark/index"
-import logoImg from "@/assets/svg/logo.svg"
+import logoImg from "@/assets/svg/vite.svg"
 const { Header, Sider, Content } = Layout;
 const { Text } = Typography;
 const App = () => {
@@ -22,7 +21,7 @@ const App = () => {
   const {
     token: { colorBgContainer,colorText },
   } = theme.useToken();
-    console.log(theme.useToken().token)
+const navigate=useNavigate();
 
 
   const [fullScreen, setFullScreen] = useState(screenfull.isFullscreen)
@@ -42,7 +41,10 @@ const App = () => {
     screenfull.toggle()
   }
   const jump = () => {
-    window.open('https://github.com/haojiey/react-mu-admin')
+    window.open('https://github.com/jiandongzou/react-manage')
+  };
+  const goMsg=()=>{
+    navigate("/system/notify")
   }
   return (
 
@@ -56,7 +58,7 @@ const App = () => {
         >
           <div className="left">
             <img src={logoImg} alt=""className="logoImg"/>
-            <h2 className="logo-text" style={{color:colorText}}>Mu Admin</h2>
+            <h2 className="logo-text" style={{color:colorText}}>Admin</h2>
           </div>
           <div className="right">
             <Button
@@ -70,7 +72,7 @@ const App = () => {
               }}
             />
             <div className="toolbox">
-              <Badge size="small" count={5}>
+              <Badge size="small" count={5} onClick={goMsg}>
                 <i className="iconfont icon-Bell font-black text-[20px]" style={{color:colorText}}/>
               </Badge>
              
